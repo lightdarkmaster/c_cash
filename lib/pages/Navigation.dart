@@ -25,9 +25,11 @@ class _HomepageState extends State<Navigation> {
           style: TextStyle(
             fontWeight: FontWeight.bold,
             color: Color.fromARGB(255, 255, 255, 255),
+            fontFamily: 'Oswald-Light.ttf',
           ),
         ),
         backgroundColor: const Color.fromARGB(255, 173, 19, 173),
+        iconTheme: IconThemeData(color: Colors.white), // Set icon color to white
       ),
       drawer: Drawer(
         child: ListView(

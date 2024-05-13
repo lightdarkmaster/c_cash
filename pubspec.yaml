@@ -97,8 +97,13 @@ flutter:
      - assets/images/FAQ.jpg
      - assets/images/ads1.gif
      - assets/images/investads.png
-     - assets/images/landbank.jpg
+     - assets/images/bank.gif
      - assets/icon.png
+     - assets/images/money.gif
+     - assets/fonts/Oswald-Light.ttf
+     - assets/images/earn.gif
+     - assets/images/wallet.gif
+     - assets/images/wallet1.png
 
   #   - images/a_dot_ham.jpeg
 

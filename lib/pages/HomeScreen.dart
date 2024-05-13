@@ -1,3 +1,4 @@
+import 'package:c_cash/pages/components/Money.dart';
 import 'package:flutter/material.dart';
 
 class HomeWidget extends StatefulWidget {
@@ -21,7 +22,9 @@ class _HomeWidgetState extends State<HomeWidget> {
             const SizedBox(height: 10),
             _buildAdsCard(),
             const SizedBox(height: 10),
-            _buildAds2Card()
+            _buildAds2Card(),
+            const SizedBox(height: 10),
+            _buildAds3Card(),
           ],
         ),
       ),
@@ -108,19 +111,27 @@ class _HomeWidgetState extends State<HomeWidget> {
             Row(
               children: [
                 const SizedBox(width: 15),
-                Column(
-                  children: [
-                    Image.asset('assets/images/money.png',
-                        width: 70, height: 70),
-                    const SizedBox(height: 5),
-                    const Text(
-                      'Money',
-                      style: TextStyle(
-                        fontSize: 12,
-                        color: Colors.black,
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => MoneyPage()),
+                    );
+                  },
+                  child: Column(
+                    children: [
+                      Image.asset('assets/images/money.png',
+                          width: 70, height: 70),
+                      const SizedBox(height: 5),
+                      const Text(
+                        'Money',
+                        style: TextStyle(
+                          fontSize: 12,
+                          color: Colors.black,
+                        ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
                 const SizedBox(width: 15),
                 Column(
@@ -321,7 +332,7 @@ class _HomeWidgetState extends State<HomeWidget> {
             ),
           ),
           Image.asset(
-            'assets/images/landbank.jpg', // Path to local image asset
+            'assets/images/bank.gif', // Path to local image asset
             height: 250,
             width: double.infinity,
             fit: BoxFit.cover,
@@ -341,23 +352,14 @@ class _HomeWidgetState extends State<HomeWidget> {
       ),
     );
   }
+
   Widget _buildAds2Card() {
     return Card(
       elevation: 10,
       child: Column(
         children: [
-          const Padding(
-            padding: EdgeInsets.all(8.0),
-            child: Text(
-              'Earn Now!!',
-              style: TextStyle(
-                fontSize: 20,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-          ),
           Image.asset(
-            'assets/images/investads.png', // Path to local image asset
+            'assets/images/earn.gif', // Path to local image asset
             height: 250,
             width: double.infinity,
             fit: BoxFit.cover,
@@ -377,6 +379,34 @@ class _HomeWidgetState extends State<HomeWidget> {
       ),
     );
   }
+
+  Widget _buildAds3Card() {
+    return Card(
+      elevation: 10,
+      child: Column(
+        children: [
+          Image.asset(
+            'assets/images/money.gif', // Path to local image asset
+            height: 250,
+            width: double.infinity,
+            fit: BoxFit.cover,
+          ),
+          Padding(
+            padding: const EdgeInsets.all(9.0),
+            child: Container(
+              alignment: Alignment.center,
+              child: const Text(
+                'Cryptocurrency, often referred to as crypto, is a digital or virtual form of currency secured by cryptography. It operates independently of a central authority, such as a government or bank, making it decentralized. Transactions involving cryptocurrencies are recorded on a digital ledger called a blockchain, which ensures transparency and immutability.',
+                style: TextStyle(fontSize: 16),
+                textAlign: TextAlign.justify,
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
   Widget _buildCashInButton() {
     return const SizedBox(); // Empty widget because the button is now part of the balance card
   }
