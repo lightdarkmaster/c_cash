@@ -29,15 +29,15 @@ class _FAQState extends State<FAQ> {
               ),
               const SizedBox(height: 16),
               const QuestionWithAnswer(
-                question: 'How can I calculate fertilizer?',
+                question: 'How can send money?',
                 answer:
-                    'Answer to question 2: This is a mock answer for question 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+                    'Go to send Money and send transactions',
               ),
               const SizedBox(height: 16),
               const QuestionWithAnswer(
-                question: 'Is this Reliable?',
+                question: 'How Can I earn Money?',
                 answer:
-                    'Answer to question 3: This is a mock answer for question 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+                    'Work Hard and Earn More.',
               ),
               // Add more questions here if needed
             ],

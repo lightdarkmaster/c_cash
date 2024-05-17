@@ -1,4 +1,5 @@
 import 'package:c_cash/pages/components/Money.dart';
+import 'package:c_cash/pages/components/Save.dart';
 import 'package:flutter/material.dart';
 
 class HomeWidget extends StatefulWidget {
@@ -134,19 +135,27 @@ class _HomeWidgetState extends State<HomeWidget> {
                   ),
                 ),
                 const SizedBox(width: 15),
-                Column(
-                  children: [
-                    Image.asset('assets/images/piggybank.png',
-                        width: 60, height: 60),
-                    const SizedBox(height: 10),
-                    const Text(
-                      'C-Save',
-                      style: TextStyle(
-                        fontSize: 12,
-                        color: Colors.black,
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => CSave()),
+                    );
+                  },
+                  child: Column(
+                    children: [
+                      Image.asset('assets/images/piggybank.png',
+                          width: 60, height: 60),
+                      const SizedBox(height: 10),
+                      const Text(
+                        'C-Save',
+                        style: TextStyle(
+                          fontSize: 12,
+                          color: Colors.black,
+                        ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
                 const SizedBox(width: 15),
                 Column(

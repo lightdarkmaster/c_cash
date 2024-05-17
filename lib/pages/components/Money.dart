@@ -120,7 +120,7 @@ class _MoneyPageState extends State<MoneyPage> {
                                 height: 150,
                               ),
                               const SizedBox(height: 5),
-                              const Text('Add Money'),
+                              const Text('Php. 3,476.98'),
                             ],
                           ),
                           Column(
