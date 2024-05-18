@@ -29,7 +29,7 @@ class _FAQState extends State<FAQ> {
               ),
               const SizedBox(height: 16),
               const QuestionWithAnswer(
-                question: 'How can send money?',
+                question: 'How can send money to others?',
                 answer:
                     'Go to send Money and send transactions',
               ),
