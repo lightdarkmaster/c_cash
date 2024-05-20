@@ -153,24 +153,21 @@ class _MoneyPageState extends State<MoneyPage> {
                 ),
               ),
             ),
-
-
-
             SizedBox(
               height: 260, // Adjust the height as needed
               child: Card(
-      elevation: 10,
-      child: Column(
-        children: [
-          Image.asset(
-            'assets/images/phone.gif', // Path to local image asset
-            height: 250,
-            width: double.infinity,
-            fit: BoxFit.cover,
-          ),
-        ],
-      ),
-    ),
+                elevation: 10,
+                child: Column(
+                  children: [
+                    Image.asset(
+                      'assets/images/phone.gif', // Path to local image asset
+                      height: 250,
+                      width: double.infinity,
+                      fit: BoxFit.cover,
+                    ),
+                  ],
+                ),
+              ),
             ),
           ],
         ),
@@ -178,3 +175,5 @@ class _MoneyPageState extends State<MoneyPage> {
     );
   }
 }
+
+//need to optimize the app..
