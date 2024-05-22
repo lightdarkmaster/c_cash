@@ -21,7 +21,7 @@ class _HistoryState extends State<History> {
     Transaction(title: 'Withdrawal', amount: -578.98),
     Transaction(title: 'Payment', amount: -1278.98),
     Transaction(title: 'Deposit', amount: -200),
-    Transaction(title: 'Desposit', amount: -9076),
+    Transaction(title: 'Desposit', amount: -8076),
   ];
 
   @override
