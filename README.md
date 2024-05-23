@@ -1,6 +1,6 @@
 # c_cash
 
-A new Flutter project.
+This Project Aims to have an alternative E-Wallet simmilar to GCash and utilize the availability of the resources..
 
 ## Getting Started
 
@@ -14,3 +14,5 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+
