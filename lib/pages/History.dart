@@ -13,7 +13,7 @@ class _HistoryState extends State<History> {
     Transaction(title: 'Deposit', amount: 1000),
     Transaction(title: 'Withdrawal', amount: -200),
     Transaction(title: 'Withdrawal', amount: -170),
-    Transaction(title: 'Withdrawal', amount: -2678.0),
+    Transaction(title: 'Withdrawal', amount: -1678.0),
     Transaction(title: 'Withdrawal', amount: -200),
     Transaction(title: 'Deposit', amount: -496),
     Transaction(title: 'Withdrawal', amount: -1700),
