@@ -158,34 +158,50 @@ class _HomeWidgetState extends State<HomeWidget> {
                   ),
                 ),
                 const SizedBox(width: 15),
-                Column(
-                  children: [
-                    Image.asset('assets/images/sendmoney.png',
-                        width: 70, height: 70),
-                    const SizedBox(height: 5),
-                    const Text(
-                      'Send Money',
-                      style: TextStyle(
-                        fontSize: 12,
-                        color: Colors.black,
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => CSave()),
+                    );
+                  },
+                  child: Column(
+                    children: [
+                      Image.asset('assets/images/sendmoney.png',
+                          width: 60, height: 60),
+                      const SizedBox(height: 10),
+                      const Text(
+                        'Send Money',
+                        style: TextStyle(
+                          fontSize: 12,
+                          color: Colors.black,
+                        ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
                 const SizedBox(width: 15),
-                Column(
-                  children: [
-                    Image.asset('assets/images/load.png',
-                        width: 70, height: 70),
-                    const SizedBox(height: 5),
-                    const Text(
-                      'Load',
-                      style: TextStyle(
-                        fontSize: 12,
-                        color: Colors.black,
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => CSave()),
+                    );
+                  },
+                  child: Column(
+                    children: [
+                      Image.asset('assets/images/load.png',
+                          width: 60, height: 60),
+                      const SizedBox(height: 10),
+                      const Text(
+                        'Load',
+                        style: TextStyle(
+                          fontSize: 12,
+                          color: Colors.black,
+                        ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
               ],
             ),
@@ -193,11 +209,18 @@ class _HomeWidgetState extends State<HomeWidget> {
             Row(
               children: [
                 const SizedBox(width: 15),
-                Column(
-                  children: [
-                    Image.asset('assets/images/cashin.png',
-                        width: 70, height: 70),
-                    const SizedBox(height: 5),
+                GestureDetector(
+                  onTap: (){
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => CSave()),
+
+                    );
+                  },
+                  child: Column(children: [
+                    Image.asset('assets/images/cashin',
+                    width: 60, height: 60),
+                    const SizedBox(height: 10),
                     const Text(
                       'Cash In',
                       style: TextStyle(
@@ -206,6 +229,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                       ),
                     ),
                   ],
+                    ),
                 ),
                 const SizedBox(width: 15),
                 Column(
