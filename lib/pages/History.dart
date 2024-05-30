@@ -10,7 +10,7 @@ class History extends StatefulWidget {
 class _HistoryState extends State<History> {
   List<Transaction> transactions = [
     Transaction(title: 'Payment', amount: -500),
-    Transaction(title: 'Deposit', amount: 6700),
+    Transaction(title: 'Deposit', amount: 6780),
     Transaction(title: 'Withdrawal', amount: -20),
     Transaction(title: 'Withdrawal', amount: -170),
     Transaction(title: 'Withdrawal', amount: -1678.0),
