@@ -37,7 +37,7 @@ class _FAQState extends State<FAQ> {
               const QuestionWithAnswer(
                 question: 'How Can I earn Money?',
                 answer:
-                    'Work Hard and Earn More.',
+                    'Apply for a job, Work Hard and Earn More.',
               ),
               // Add more questions here if needed
             ],
