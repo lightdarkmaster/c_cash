@@ -25,7 +25,7 @@ class _FAQState extends State<FAQ> {
               const QuestionWithAnswer(
                 question: 'How to use this App?',
                 answer:
-                    'Answer to question 1: This is a mock answer for question 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+                    'We provide deep procedures and manual in the other page for the app manual/instructions.',
               ),
               const SizedBox(height: 16),
               const QuestionWithAnswer(
