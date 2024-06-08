@@ -25,7 +25,7 @@ class _FAQState extends State<FAQ> {
               const QuestionWithAnswer(
                 question: 'How to use this App?',
                 answer:
-                    'We provide deep procedures and manual in the other page for the app manual/instructions.',
+                    'We provide deep procedures and manual in the other page for the app manual/instructions. check it to instruction page',
               ),
               const SizedBox(height: 16),
               const QuestionWithAnswer(
