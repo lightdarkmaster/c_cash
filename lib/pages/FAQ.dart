@@ -23,7 +23,7 @@ class _FAQState extends State<FAQ> {
                 fit: BoxFit.cover,
               ),
               const QuestionWithAnswer(
-                question: 'How to use this App?',
+                question: 'How to Use this App?',
                 answer:
                     'We provide deep procedures and manual in the other page for the app manual/instructions. check it to instruction page in the app',
               ),
