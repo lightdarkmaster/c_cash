@@ -31,7 +31,7 @@ class _FAQState extends State<FAQ> {
               const QuestionWithAnswer(
                 question: 'How can send money to others?',
                 answer:
-                    'Go to send Money and enter the desire amount you want to send, and then go to send transactions',
+                    'Go to send Money and enter the desire amount you want to send, and then go to send transactions and see history',
               ),
               const SizedBox(height: 16),
               const QuestionWithAnswer(
